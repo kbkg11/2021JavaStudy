@@ -79,19 +79,23 @@
 <br>
 <br>
 
-### javac 옵션들
+# javac 옵션사용하기
 
-```
-javac 옵션 기본적인 사용법 ➡ javac <option> <source files>
+### javac -d
 
-javac -sourcepath : 관련된 소스파일의 위치를 지정해주는 옵션이다.
-javac -classpath  : 관련된 클래스 파일(또는 jar, zip 파일)의 위치를 지정한다.
-javac d : 클래스 파일을 생성할 루트 디렉토리 설정
-avac -encoding : 소스 파일에 사용된 문자열 설정
-javac -g:none : 디버깅 정보 생성 ❌
-javac nowarn : 경고 메세지 생성 ❌ (경고 메세지 관련 옵션에서 사용)
+클래스 파일을 생성할 루트 디렉토리 설정해준다. <br>
+소스 파일과 생성될 클래스 파일의 위치를 따로 분리를 시키고 싶을 경우 사용하면 된다.
 
-```
+<br>
+
+<img src="../img/javac d.JPG.png">
+`사용법 : javac -d <클래스 파일이 생성될 위치> <소스 파일 위치>`
+
+<br>
+
+<img src="../img/javac d 2.JPG">
+
+### class 폴더에 Test0421_1.class 파일이 잘 생성되었습니다.
 
 <br>
 <br>

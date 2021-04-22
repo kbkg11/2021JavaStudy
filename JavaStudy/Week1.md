@@ -7,9 +7,11 @@
 - JIT 컴파일러란 무엇이며 어떻게 동작하는지
 - JVM 구성 요소
 - JDK와 JRE의 차이
-  <br>
-  <br>
-  <br>
+
+- - javac 옵션조사하기, jvm구성요소 추가 조사하기, 컴파일타임과 런타임
+    <br>
+    <br>
+    <br>
 
 # JVM 이란 무엇인가?
 
@@ -76,6 +78,23 @@
 
 <br>
 <br>
+
+### javac 옵션들
+
+```
+javac 옵션 기본적인 사용법 ➡ javac <option> <source files>
+
+javac -sourcepath : 관련된 소스파일의 위치를 지정해주는 옵션이다.
+javac -classpath  : 관련된 클래스 파일(또는 jar, zip 파일)의 위치를 지정한다.
+javac d : 클래스 파일을 생성할 루트 디렉토리 설정
+avac -encoding : 소스 파일에 사용된 문자열 설정
+javac -g:none : 디버깅 정보 생성 ❌
+javac nowarn : 경고 메세지 생성 ❌ (경고 메세지 관련 옵션에서 사용)
+
+```
+
+<br>
+<br>
 <br>
 
 # 자바코드를 실행하는 방법
@@ -110,7 +129,7 @@
 <br>
 
 <img src="../img/bytecode.JPG" width="800px" heigth="350px">
-
+ 
 <br>
 <br>
 <br>

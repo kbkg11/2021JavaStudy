@@ -81,7 +81,7 @@
 
 # javac 옵션사용하기
 
-### javac -d
+## javac -d
 
 클래스 파일을 생성할 루트 디렉토리를 설정해준다. <br>
 소스 파일과 생성될 클래스 파일의 위치를 따로 분리를 시키고 싶을 경우 사용하면 된다.
@@ -92,7 +92,7 @@
 
 <img src="../img/javac d.JPG.png">
 
-## D:\class폴더에 Test0421_1.java을 컴파일한 .class 파일을 생성해주기 위한 명령어
+### D:\class폴더에 Test0421_1.java을 컴파일한 .class 파일을 생성해주기 위한 명령어
 
 <br>
 <br>
@@ -107,30 +107,36 @@
 ## javac -classpath
 
 관련된 클래스 파일(또는 jar, zip 파일)의 위치를 지정한다.
+
+<br>
+<br>
+
 <img src="../img/hello.JPG">
 <img src="../img/API.JPG">
 
+<br>
 <br>
 
 **API 클래스는 Hello를 참조하고 있기 때문에 그냥 컴파일하면 에러가 발생합니다.**
 
 <br>
+<br>
 
 <img src="../img/error.JPG">
 
-_참조하고 있는 클래스인 hello클래스의 위치를 모르기 때문이다_
-
-<img src="../img/javac classpath.JPG.png">
+참조하고 있는 클래스인 hello클래스의 위치를 모르기 때문이다
 
 <br>
+<br>
+
+<img src="../img/javac classpath.JPG.png">
 
 ### -class path + 참조할 클래스 파일 위치를 추가해줍니다
 
 <br>
+<br>
 
 <img src="../img/APIclass.JPG">
-
-<br>
 
 ### -class path 옵션을 추가하니 에러없이 클래스 파일이 잘 생성됩니다.
 

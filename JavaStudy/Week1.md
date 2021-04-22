@@ -113,10 +113,6 @@
 
 <img src="../img/hello.JPG">
 <img src="../img/API.JPG">
-
-<br>
-<br>
-
 **API 클래스는 Hello를 참조하고 있기 때문에 그냥 컴파일하면 에러가 발생합니다.**
 
 <br>
@@ -124,7 +120,7 @@
 
 <img src="../img/error.JPG">
 
-참조하고 있는 클래스인 hello클래스의 위치를 모르기 때문이다
+_참조하고 있는 클래스인 hello클래스의 위치를 모르기 때문이다_
 
 <br>
 <br>

@@ -92,7 +92,7 @@
 
 <img src="../img/javac d.JPG.png">
 
-### D:\class폴더에 Test0421_1.java을 컴파일한 .class 파일을 생성해주기 위한 명령어
+## D:\class폴더에 Test0421_1.java을 컴파일한 .class 파일을 생성해주기 위한 명령어
 
 <br>
 <br>
@@ -104,23 +104,33 @@
 <br>
 <br>
 
-### javac -classpath
+## javac -classpath
 
 관련된 클래스 파일(또는 jar, zip 파일)의 위치를 지정한다.
 <img src="../img/hello.JPG">
 <img src="../img/API.JPG">
 
-**API 클래스는 Hello를 참조하고 있기 때문에 그냥 컴파일하면 에러가 발생합니다.**
 <br>
+
+**API 클래스는 Hello를 참조하고 있기 때문에 그냥 컴파일하면 에러가 발생합니다.**
+
+<br>
+
 <img src="../img/error.JPG">
 
 _참조하고 있는 클래스인 hello클래스의 위치를 모르기 때문이다_
 
 <img src="../img/javac classpath.JPG.png">
 
+<br>
+
 ### -class path + 참조할 클래스 파일 위치를 추가해줍니다
 
+<br>
+
 <img src="../img/APIclass.JPG">
+
+<br>
 
 ### -class path 옵션을 추가하니 에러없이 클래스 파일이 잘 생성됩니다.
 

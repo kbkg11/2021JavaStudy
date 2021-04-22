@@ -104,6 +104,27 @@
 <br>
 <br>
 
+### javac -classpath
+
+관련된 클래스 파일(또는 jar, zip 파일)의 위치를 지정한다.
+<img src="../img/hello.JPG">
+<img src="../img/API.JPG">
+
+**API 클래스는 Hello를 참조하고 있기 때문에 그냥 컴파일하면 에러가 발생합니다.**
+<br>
+<img src="../img/error.JPG">
+
+_참조하고 있는 클래스인 hello클래스의 위치를 모르기 때문이다_
+
+<img src="../img/javac classpath.JPG.png">
+
+### -class path + 참조할 클래스 파일 위치를 추가해줍니다
+
+<img src="../img/APIclass.JPG">
+
+### -class path 옵션을 추가하니 에러없이 클래스 파일이 잘 생성됩니다.
+
+<br>
 <br>
 <br>
 
@@ -114,7 +135,7 @@ javac -encoding : 소스 파일에 사용된 문자열 설정
 javac -g:none : 디버깅 정보 생성 ❌
 javac nowarn : 경고 메세지 생성 ❌ (경고 메세지 관련 옵션에서 사용)
 javac -sourcepath : 관련된 소스파일의 위치를 지정해주는 옵션이다.
-javac -classpath  : 관련된 클래스 파일(또는 jar, zip 파일)의 위치를 지정한다.
+
 ```
 
 <br>

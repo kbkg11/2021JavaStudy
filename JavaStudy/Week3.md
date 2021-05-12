@@ -1,6 +1,6 @@
 # 5. 배열
 
-#### 배열을 선언하는 두 가지 방법
+### 배열을 선언하는 두 가지 방법
 
 ```java
 int[] iarr = new int[5];
@@ -15,21 +15,26 @@ int[] iarr = {10, 20, 30, 40, 50};
 
 <br>
 
-#### 레퍼런스의 이해
+### 레퍼런스의 이해
 
 1. **기초자료형 변수**
    메모리에 i라는 변수가 만들어 지고, i안에 10이라는 데이터가 들어 간다.
+   <br>
    <img src="../img/int i.png" width="200px">
+   <br>
 
  <br>
 
 2. **배열**
    메모리에 iarr이라는 배열이 만들어지고, iarr배열안에는 배열을 구성하고 있는 데이터 주소값이 들어 있다.
+   <br>
    <img src="../img/iarr.png" width="600px">
 
 <br>
 
 #### 실습해보기
+
+<br>
 
 ```java
 public class ArrTest1_1 {
@@ -60,6 +65,8 @@ public class ArrTest1_1 {
 6
 9
 ```
+
+<br>
 
 **기초자료형 변수 a에 arr[0] 값을 넣은 후, 값을 변경해도 배열 arr값에는 지장이 없다**
 
@@ -95,13 +102,17 @@ public class ArrTest1_1 {
 9
 ```
 
+<br>
+
 **배열 a에 arr 값을 넣은 후, arr[0] 값을 변경하자 배열 arr값이 변경된다**
 
 <br>
 
 # 6. 객체지향 프로그래밍
 
-#### 메소드
+### 메소드
+
+<br>
 
 1. **메소드 이용하기**
 
@@ -114,7 +125,7 @@ public class ArrTest1_1 {
 
 <br>
 
-2. **\*접근제한자의 종류**
+2. **접근제한자의 종류**
 
   <img src="../img/Modifier.png" width="400px">
 
@@ -123,6 +134,8 @@ public class ArrTest1_1 {
 #### 실습해보기
 
 **사용자로부터 1~9까지 숫자 중 한개의 숫자를 입력받아 구구단 출력하기**
+
+<br>
 
 ```java
 public class MethodTest {
@@ -192,6 +205,8 @@ public class Color {
 
 ```
 
+<br>
+
 ```java
 public class MethodTest {
 
@@ -215,6 +230,8 @@ public class MethodTest {
 자동차의 색상은 빨강입니다.
 
 ```
+
+<br>
 
 ```java
 public class ObjectTest {
@@ -302,6 +319,8 @@ arr[1] = 3
 
 ```
 
+<br>
+
 ```java
 public class Coll_by_reference {
 
@@ -322,11 +341,7 @@ public class Coll_by_reference {
 		num1.num = num2.num;
 		num2.num = temp;
 	}
-    static NumberClass swap(NumberClass argznum)
-    {
-        NumberClass num = new NumberClass(argznum.num);
-        return num;
-    }
+
 }
 
 class NumberClass {

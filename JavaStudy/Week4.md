@@ -88,8 +88,12 @@ public class Main {
 
 		while (true) {
 			int SwInput, i;
-			System.out.println("-------------\n" + "쇼핑몰 회원 관리\n" + "-------------\n" + "숫자를 입력해주세요\n"
-					+ "1 : 회원정보 추가하기\n" + "2 : 회원정보 조회하기\n" + "3 : 회원정보 수정하기\n" + "4 : 회원정보 삭제하기\n" + "5 : 프로그램 종료하기");
+			System.out.println("-------------\n"
+			+ "쇼핑몰 회원 관리\n" + "-------------\n"
+					+ "숫자를 입력해주세요\n"
+					+ "1 : 회원정보 추가하기\n"
+					+ "2 : 회원정보 조회하기\n" + "3 : 회원정보 수정하기\n"
+					+ "4 : 회원정보 삭제하기\n" + "5 : 프로그램 종료하기");
 			input = sc.nextInt();
 			switch (input) {
 
@@ -106,7 +110,8 @@ public class Main {
 				rank = sc.next().charAt(0);
 				manager.addMember(number, name, age, rank);
 
-				System.out.println("\n회원정보 추가가 완료되었습니다\n" + "메인화면으로 돌아가기 (1)\n" + "프로그램 종료 (2)\n");
+				System.out.println("\n회원정보 추가가 완료되었습니다\n"
+				+ "메인화면으로 돌아가기 (1)\n" + "프로그램 종료 (2)\n");
 				SwInput = sc.nextInt();
 				if (SwInput == 1) {
 					continue;
@@ -143,7 +148,8 @@ public class Main {
 				rank = sc.next().charAt(0);
 				manager.setMember(i - 1, number, name, age, rank);
 
-				System.out.println("\n회원정보 수정이 완료되었습니다\n" + "메인화면으로 돌아가기 (1)\n" + "프로그램 종료 (2)\n");
+				System.out.println("\n회원정보 수정이 완료되었습니다\n"
+				+ "메인화면으로 돌아가기 (1)\n" + "프로그램 종료 (2)\n");
 				SwInput = sc.nextInt();
 				if (SwInput == 1) {
 					continue;
@@ -157,7 +163,8 @@ public class Main {
 				System.out.print("삭제할 회원의 회원번호입력: ");
 				i = sc.nextInt();
 				manager.removeMember(i - 1);
-				System.out.println("\n회원정보 삭제가 완료되었습니다\n" + "메인화면으로 돌아가기 (1)\n" + "프로그램 종료 (2)\n");
+				System.out.println("\n회원정보 삭제가 완료되었습니다\n"
+				+ "메인화면으로 돌아가기 (1)\n" + "프로그램 종료 (2)\n");
 				SwInput = sc.nextInt();
 				if (SwInput == 1) {
 					continue;

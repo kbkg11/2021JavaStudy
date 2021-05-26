@@ -3,13 +3,77 @@
 ### 추상클래스란?
 
 - 클래스를 추상적으로만 정의해둔다.
-- 사용자가 추상클래스를 사용할 때 꼭 재정의 해야 한다.
 - 클래스 앞에 `abstract` 키워드를 넣어사용한다.
 - 자식 클래스에서 꼭 재정의해야 하는 부분이 있을 때 사용한다.
 
 <br>
 
-### 추상클래스 이용하기
+## 추상클래스 이용하기
+
+**추상화클래스 하나로 여러도형 넚이 구하기**
+
+```java
+public abstract class Calculation {
+
+	int height;
+	int weight;
+	int square;
+	int triangle;
+
+	public abstract void Figure(int height, int weight);
+
+}
+```
+
+```java
+public class Square extends Calculation {
+
+	@Override
+	public void Figure(int height, int weight) {
+
+		square = height * weight;
+		System.out.println("사각형의 넓이는: " + square);
+
+	}
+
+}
+```
+
+```java
+public class Triangle extends Calculation {
+
+	@Override
+	public void Figure(int height, int weight) {
+		triangle = (height * weight) / 2;
+		System.out.println("삼각형의 넓이는: " + triangle);
+	}
+
+}
+```
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int height = 0, weight = 0;
+
+		System.out.print("높이: ");
+		height = sc.nextInt();
+		System.out.print("넓이: ");
+		weight = sc.nextInt();
+
+		Square square = new Square();
+		square.Figure(height, weight);
+		Triangle triangle = new Triangle();
+		triangle.Figure(height, weight);
+
+	}
+
+}
+```
 
 **기숙사 하루, 한 달 식비 계산하기**
 
@@ -54,7 +118,7 @@ public abstract class Calculation {
 	}
 
 	public abstract int Calculating();
-	// 계산은 꼭 해야하기 떄문에 abstract로 설정
+	// 계산은 꼭 해야하므로 떄문에 abstract로 설정
 }
 ```
 
@@ -144,7 +208,7 @@ student2의 하루,한 달 급식비: 11000, 220000
 
 <br>
 
-## scanner를 이용해서 만들기
+**scanner를 이용해서 만들기**
 
 ```java
 public class Expenses {
@@ -182,7 +246,7 @@ public abstract class Calculation {
 	}
 
 	public abstract int Calculating();
-    //계산은 꼭 해야하기 떄문에 추상클래스로 만들기
+    //계산은 꼭 해야하므로 떄문에 추상클래스로 만들기
 }
 ```
 

@@ -92,7 +92,7 @@ IFunctiion[] iFuntions = {interface1, interface2, interface3}
 
 ### 인터페이스를 활용하여 간단한 검색기능 만들기
 
-<img src ="../img/implements.jpg" width="500px" >
+<img src ="../img/implements.jpg" width="500px" height="480px">
 
 ```java
 public interface Stuff {

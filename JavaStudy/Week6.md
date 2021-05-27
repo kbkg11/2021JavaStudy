@@ -73,6 +73,13 @@ public class Main {
 	}
 
 }
+
+실행결과
+-------------------
+높이: 4
+넓이: 4
+사각형의 넓이는: 16
+삼각형의 넓이는: 8
 ```
 
 **기숙사 하루, 한 달 식비 계산하기**
@@ -109,8 +116,8 @@ public abstract class Calculation {
 	}
 
 	public abstract void Lunch(int jungsig, int hansig, int ilsig);
-
 	// 중식은 필수 신청이기 떄문에 abstract로 설정
+
 	public void Dinner(int dinner) {
 	}
 

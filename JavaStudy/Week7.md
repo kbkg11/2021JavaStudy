@@ -92,6 +92,8 @@ IFunctiion[] iFuntions = {interface1, interface2, interface3}
 
 ### 인터페이스를 활용하여 간단한 검색기능 만들기
 
+<img src ="../img/implements.png" width="500px" >
+
 ```java
 public interface Stuff {
 //인터페이스들을 하나로 묶어주기 위해 생성
